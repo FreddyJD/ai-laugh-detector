@@ -54,9 +54,8 @@ if __name__ == '__main__':
 		input_path, model_path, output_path, threshold, min_length, save_to_textgrid = parse_inputs()
 		min_length = seconds_to_frames(min_length)
 
-		laughs = laugh_segmenter.segment_laughs(input_path, model_path, output_path,
-                                                        threshold, min_length, save_to_textgrid) 
-		print(); print("found %d laughs." % (len (laughs)))
+		laughs = laugh_segmenter.segment_laughs(input_path, model_path, output_path, threshold, min_length, save_to_textgrid) 
+		print("found %d laughs." % (len (laughs)))
 
 		if not save_to_textgrid:
 			for laugh in laughs:
