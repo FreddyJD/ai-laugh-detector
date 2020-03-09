@@ -1,7 +1,7 @@
 import tensorflow as tf
-config = tf.compat.v1.ConfigProto()
+config = tf.ConfigProto()
 config.gpu_options.allow_growth = True
-session = tf.compat.v1.Session(config=config)
+session = tf.Session(config=config)
 
 import numpy as np
 import scipy.signal as signal
@@ -9,8 +9,8 @@ import scipy
 import os
 import sys
 import librosa
-import tensorflow.keras
-from tensorflow.keras.models import load_model
+import keras
+from keras.models import load_model
 
 import compute_features
 
