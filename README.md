@@ -6,7 +6,7 @@ Few improvements on this project:
 
 
 - Added a Docker so anyone can use it. (Just trying to get it working took me a solid a week.)
-- A NodeJS Wrapper that creates a simple api that will download a YouTube video and covert it to a wavfile.
+- A NodeJS Wrapper that creates a simple api that will download a YouTube video
 - Simple frontend where you can lazy load the YouTube video.
 
 
